@@ -37,7 +37,7 @@
 
       .remark-slide .remark-slide-content {
          background-position: bottom left;
-         background-image: url(images/inria.jpg);
+         /*background-image: url(images/inria.jpg);*/
          background-repeat:no-repeat;
          font-size: 26px;    
       }
@@ -55,6 +55,8 @@ class: center, middle
 David Margery, Sébastien Campion
 
 Ingénieur de Recherche INRIA
+
+http://scampion.github.io/devoss/
 
 
 ---
@@ -105,17 +107,9 @@ Des débats passionnés s'en suivent
 
 # Plan
 
-* La propriété
-* Le Droit
-  * Français
-  * International
-* Le partage
-* Les libertés du logiciel libre 
-* La question de l'objectif
-* La Licence, modalité de réconciliation de la propriété et du partage
-* Le logiciel libre et le droits des marques
-* Le logiciel libre et le développement communautaire
-
+### Les Droits
+### Les Devoirs 
+### Les Pratiques 
 
 ---
 
@@ -293,7 +287,7 @@ class: center, middle, inverse
 # II : Vous diffusez et ensuite ?
 ---
 # Le cas simple : les utilisateurs
-Voulez-vous que les utilisateurs contribuent à votre logiciel libre ? 
+Voulez-vous que les utilisateurs contribuent à votre logiciel ? 
 * Processus d'installation
   * À documenter
   * Fabrication de scripts et de paquets 
@@ -354,6 +348,7 @@ En plus de la question des droits patrimoniaux, les développeurs amènent d'aut
 # Projets connexes au votre
 
 En théorie, on ne devrait distribuer que son code
+
 En pratique :
 * Souvent des bibliothèque tierces incluses
 * Ou des lots pour une installation facile
@@ -383,7 +378,98 @@ Utilisation de forges, dont il est plus ou moins facile d'extraire son projet
 
 
 ---
+class: center, middle, inverse
+# III : Les pratiques de l'open source
+---
 
+# Réduire "l’énergie d’hacktivation" (1/2)
+## Définition
+* Choisir un bon nom
+  * Donne une idée de l'objectif du projet
+  * Simple à mémoriser en anglais
+  * Différent de celui d’un autre projet et qui ne s’approche d’aucune marque déposée http://bases-marques.inpi.fr/
+  * Disponible comme nom de domaine en .com, .net ou .org si possible
+* Les objectifs : concrets, restreints et surtout concis
+* La licence 
+* Ses fonctionnalités et celles prévues 
+* Les pré-requis
+* Téléchargements (Code source, Paquet binaire, Conteneur)
+---
+# Réduire "l’énergie d’hacktivation" (2/2)
+
+## L' installation 
+
+* Depuis le source : standardiser les procédures d’installation 
+  * En C >  ./configure && make && make install
+  * En python > python setup.py build
+* Paquet binaire : .bin statique (incluant la libc.a)
+* Paquet est préconfiguré:  .deb, .rpm, .msi
+
+
+## L' utilisation 
+
+* Usage : comment utiliser le logiciel et faire tourner un diagnostic (test de base)
+* Donner différents exemples d'utilisation
+---
+# Communication : README
+## Minimal :  
+* Le nom (le site web)
+* Les fonctionnalitées
+* La licence
+* Les dépendances (pré-requis)
+* L'installation 
+* L'usage
+* Le(s) autheur(s)
+
+### Format facilement éditable Mardown, txt 
+### Disponible a deux endroits : en ligne et sur le web (coordonnées aux versions)
+---
+# Communication écrite 
+## La liste de diffusion
+* Montrer que vous etes joignable sur la liste de discussion
+* projet-commits : suivi des contributions  
+
+## Messagerie Instantané
+* IRC
+---
+# Communication sur le dévelloppement 
+* __Outils de suivi__ : 
+  * Bug tracker ( /!\ ce n'est pas un forum )
+  * Feature request, ...
+* __Gestion de versions__ :
+  * Source code repository
+  * Stratégie du numérotation de versions:  Majeur.Mineur.Infra
+* __Les directives pour développeurs__
+  * Style Guidelines, on how to organize your source code.
+  * Git Workflow Changes discusses how our workflow has changed now that Mono is hosted on GitHub.
+  * Source Code Control details our source code control use. 
+  * Best Practices, used in the project.
+
+---
+
+# Infrastructure technique
+Les forges fournissent : 
+* Site Web
+* Listes de diffusion
+* Controle de versions
+* E-mails de commit
+* Référencement de bogues
+* Messagerie instantanée ou chat en temps réel
+* Wiki
+* Intégration continue 
+
+>>>>> ##/!\ l'adhérence 
+---
+# Infrastructure sociale :
+
+Paquets, sorties et développement au quotidien 
+* 1 commit = 1 modification 
+* Ne pas trop attendre entre les releases, et l'intégration des patches, le risque est que le patch ne soit plus à jour. 
+* Les branches de publications 
+* Revue de code
+* Signature du commit
+
+---
 # Conclusions
 
 Le chercheur n'est pas le seul à décider de la diffusion du résultat de son travail
