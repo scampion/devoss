@@ -4,24 +4,41 @@
     <title>OpenSource </title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <style type="text/css">
-      @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-      @import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
-      @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
-      @import url(http://fonts.googleapis.com/css?family=Lato:300);
       @import url(pdf.css);
       
+      @font-face {
+        font-family: Lato;
+        src: url("fonts/Lato-Light.ttf") format("truetype");
+      }
+      
+      @font-face {
+        font-family: Yanone;
+        src: url("fonts/YanoneKaffeesatz-Light.otf") format("opentype");
+      }
+
+
       body { 
         font-family: 'Lato', sans-serif;
       }
       h1, h2, h3, h4 {
-        font-family: 'Yanone Kaffeesatz';
+        font-family: 'Yanone';
         font-weight: normal;
+      }
+
+      .inverse {
+        color: #777;
+        text-shadow: 0 0 20px #777;
+      }
+ 
+      a:link {
+          color: #DD0D13;
       }
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
 
       .remark-slide .remark-slide-content {
          background-position: bottom left;
-         background-image: url(inria.jpg);
+         background-image: url(images/inria.jpg);
+         background-repeat:no-repeat;
          font-size: 26px;    
       }
     </style>
@@ -30,6 +47,7 @@
     <textarea id="source">
 
 class: center, middle
+
 
 # Le développement Open Source 
 ## à travers le prisme de la recherche
@@ -40,7 +58,6 @@ Ingénieur de Recherche INRIA
 
 
 ---
-
 # Coder > Publier > Jeter
 
 La paillasse du chercheur en informatique est souvent un outil de programmation
@@ -54,7 +71,6 @@ Quid du code utilisé, voir du logiciel, après publication des résultats ?
 * Problème du la valorisation industrielle des résultats de recherche
 
 ---
-
 # Coder > Publier > Diffuser
 
 Le monde du logiciel libre trouve ses racines dans la pratique du partage du savoir-faire dans le monde académique. 
@@ -86,6 +102,7 @@ Des débats passionnés s'en suivent
 ###  Un logiciel libre est le plus souvent maintenu par une entreprise
 
 ---
+
 # Plan
 
 * La propriété
@@ -101,6 +118,7 @@ Des débats passionnés s'en suivent
 
 
 ---
+
 # Le droit d'auteur en France 
 
 ## Un droit moral
@@ -114,6 +132,7 @@ Des débats passionnés s'en suivent
 * Cas du stage 
 
 ---
+
 # Transmission des droits 
 
 * **Cession** : le titulaire perd ses droits
@@ -125,12 +144,11 @@ L'autorisation d'utilisation est traduite par une **Licence**
 
 ## Nota Bene :
 Pas de formalité à faire pour acquérir le droit d'auteur mais des précautions à prendre pour 
-prendre date ([Enveloppe Soleau](http://www.inpi.fr/fr/enveloppes-soleau.html)).
-
-À l'international, en général, on se rapporte toujours au droit du copyright.
+prendre date ([Enveloppe Soleau](http://www.inpi.fr/fr/enveloppes-soleau.html)). 
 
 
 ---
+
 # Avertissements 
 
 * On parle de droit, et donc d'interprétation juridique et de jurisprudence
@@ -138,6 +156,7 @@ prendre date ([Enveloppe Soleau](http://www.inpi.fr/fr/enveloppes-soleau.html)).
 * Ce n'est pas ma formation, ni mon métier
 
 ---
+
 #Je possède, donc je partage
 
 ** Les 4 libertés de la Free Software Foundation **
@@ -152,6 +171,7 @@ prendre date ([Enveloppe Soleau](http://www.inpi.fr/fr/enveloppes-soleau.html)).
 Rien n'est spécifié sur les personnes à qui l'on partage
 
 ---
+
 #Ne pas confondre !! 
 
 Logiciel du domaine public 
@@ -165,6 +185,7 @@ Logiciel gratuit - Freeware
 Un logiciel libre peut être commercial 
 
 ---
+
 #Open Source et Logiciel Libre
 
 Le monde de l'"Open Source" se focalise sur la disponibilité du code source et la possibilité de faire et de redistribuer des modifications.
@@ -176,6 +197,7 @@ En pratique :
 * Un logiciel "Open Source" peut être plus contraignant, et pas vraiment libre.
 
 ---
+
 # Pourquoi partager 
 Au-delà de vos convictions philosophiques, il va falloir convaincre celui qui détient les droits patrimoniaux
 * Analyse stratégique à réaliser : que voulez vous obtenir en échange de votre contribution ?
@@ -200,7 +222,6 @@ Souvent, vous ne pouvez pas choisir : effet contaminant des licences des bibliot
 * Pour l’ego
 
 ---
-
 # Les enjeux des licences libres
 
 * Le **copyleft** : la licence s'impose-t-elle à la redistribution ?
@@ -212,7 +233,179 @@ Souvent, vous ne pouvez pas choisir : effet contaminant des licences des bibliot
 
 ---
 
+# Les licences les plus connues
 
+## Free Software Foundation  ![](images/copyleft_small.png)
+
+* GPLv2
+* LGPL (v2 et v3)
+* AGPL pour les applis web 
+* GPLv3 (only, or later)
+
+
+## Les BSD (Berkeley Software Distribution) 
+* BSD 
+* FreeBSD
+* MIT 
+
+---
+
+## Adaptées au droit Français : 
+* CeCILL 
+* CeCILL-B
+* CeCILL-C 
+
+## Ad-hoc:
+* QL,
+* MPL
+
+---
+
+# Droit des marques
+
+Votre logiciel est libre, et d'autres peuvent donc en distribuer des variantes (a priori) :
+* Sous quel nom ?
+* Sur quel site web ?
+* Avec quelle apparence visuelle ?
+
+Entre défense de la marque et liberté du logiciel libre :
+
+* Cas de Linux
+* Cas de Firefox, Fedora, ...
+
+---
+
+# Les problèmes commencent
+
+En plus d'avoir des utilisateurs, vous risquez d'avoir des contributeurs 
+
+* Une communauté de fait, à structurer ?
+
+Entre les droits (libertés) accordés par la (les) licences choisies et la réalité, il peut y avoir un important décalage
+* Logiciel libre, mais développement fermé ? FFMPEG 
+
+Une des questions clés est celle de la légitimité
+* De fait, le contrôle s'exerce par la légitimité plus que par le droit
+
+---
+class: center, middle, inverse
+
+# II : Vous diffusez et ensuite ?
+---
+# Le cas simple : les utilisateurs
+Voulez-vous que les utilisateurs contribuent à votre logiciel libre ? 
+* Processus d'installation
+  * À documenter
+  * Fabrication de scripts et de paquets 
+* Documentation d'utilisation
+  * Sous quelle licence  
+* Tests et retour de bugs
+  * Accessibilité d'un gestionnaire de bug
+* Suggestions voir demandes de nouvelles fonctionnalités
+  * Jusqu'où aller pour répondre à vos objectifs initiaux ? 
+* Entre-aide
+  * Forum, liste de diffusion ?
+
+---
+
+# Déjà des questions difficiles
+
+Veut-on une communauté publique ?
+* Il n'y a pas d'obligation de distribuer le code source à d'autres que les utilisateurs
+* Pas d'obligation de mise en relation
+* Mais ce n'est pas juste de votre ressort
+
+Politique éditoriale d'un éventuel site web ou de listes
+de diffusion
+* Qui peut publier des informations, des nouvelles, des documents sur le site ?
+* Avec quel statut incorporer les contributions ? 
+* Vers un contrat social de votre communauté ?
+
+---
+
+# Statut des contributeurs
+
+Celui qui contribue du code source **se créé des droits patrimoniaux** 
+* A-t-il la liberté de les exploiter selon la licence de votre logiciel ?  Voulez-vous qu'il les garde, ou qu'il les cède ?
+
+En acceptant des contributions, vous devenez exploitant de droits patrimoniaux
+
+---
+# Statut des contributeurs (suite)
+
+Si vous possédez les droits d'exploitation de tous les droits patrimoniaux associé à votre logiciel, vous pouvez changer la licence : 
+* Pour vendre des licences d'utilisation
+* Pour combler un vide juridique dans la licence actuelle
+* Porter plainte en cas de violation de la licence
+
+---
+
+# Cas complexe : les développeurs
+En plus de la question des droits patrimoniaux, les développeurs amènent d'autres problèmes
+* Accès à une version de travail
+* Souhaits de connaître et/ou de participer aux directions de développement à venir 
+* Définition de ce qu'est une nouvelle version
+-> Un processus de développement va devoir être formalisé.
+
+>>  « release early, release often »
+
+---
+
+# Projets connexes au votre
+
+En théorie, on ne devrait distribuer que son code
+En pratique :
+* Souvent des bibliothèque tierces incluses
+* Ou des lots pour une installation facile
+
+Quelles relations avec les projets ayant produit le code inclus
+* Y contribuer des corrections de bugs
+* Y faire remonter les problèmes
+
+Les règles du savoir vivre dans l'univers du logiciel libre 
+* dualité autorité/pouvoir
+
+---
+
+# Les outils du développement communautaire
+* le dépôt de code, versionné 
+* le site web, le wiki
+* les listes de diffusion
+* le bug tracker
+* la documentation
+* la page de téléchargement
+* les annonces (en particulier au niveau sécurité) 
+
+Utilisation de forges, dont il est plus ou moins facile d'extraire son projet
+
+[INRIA Forge](http://gforge.inria.com)
+[GitHub](http://github.com)
+
+
+---
+
+# Conclusions
+
+Le chercheur n'est pas le seul à décider de la diffusion du résultat de son travail
+* Utiliser une licence libre est possible, mais doit se justifier
+
+Le monde du libre est
+* Extrêmement structuré, mais fragmenté
+* Très à cheval sur le droit d'auteur, du moins pour les logiciels 
+* Basé sur un contrat social plus ou moins implicite
+
+---
+# Conclusions (suite)
+
+On y est contraint de faire un certain nombre de choix 
+* Licence du logiciel
+* Gestion des droits patrimoniaux d'éventuels contributeurs 
+* Structuration du développement
+* Droits des marques
+* Intégration à un éco-système des logiciels libres
+
+---
+class: center, middle, inverse 
 #Fin
 
 
