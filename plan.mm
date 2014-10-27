@@ -1,12 +1,12 @@
 <map version="freeplane 1.2.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
-<node TEXT="Open Source &amp; Recherche" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1413400956428"><hook NAME="MapStyle">
+<node TEXT="Open Source &amp; Recherche" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1413487006497"><hook NAME="MapStyle">
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node">
 <stylenode LOCALIZED_TEXT="styles.predefined" POSITION="right">
 <stylenode LOCALIZED_TEXT="default" MAX_WIDTH="600" COLOR="#000000" STYLE="as_parent">
-<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<font NAME="Inconsolata" SIZE="10" BOLD="false" ITALIC="false"/>
 </stylenode>
 <stylenode LOCALIZED_TEXT="defaultstyle.details"/>
 <stylenode LOCALIZED_TEXT="defaultstyle.note"/>
@@ -51,6 +51,7 @@
 </hook>
 <hook NAME="AutomaticEdgeColor" COUNTER="5"/>
 <font NAME="Inconsolata" SIZE="16" BOLD="false"/>
+<hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
 <node TEXT="Intro" POSITION="right" ID="ID_469446735" CREATED="1411392800851" MODIFIED="1413400956433">
 <edge COLOR="#ff0000"/>
 <font NAME="Inconsolata" SIZE="16" BOLD="false"/>
@@ -61,7 +62,7 @@
 <font NAME="Inconsolata" SIZE="16" BOLD="false"/>
 </node>
 </node>
-<node TEXT="Droit(s)" POSITION="left" ID="ID_1208617239" CREATED="1411392860357" MODIFIED="1413400956437">
+<node TEXT="I - Droit(s)" POSITION="left" ID="ID_1208617239" CREATED="1411392860357" MODIFIED="1413487024271">
 <edge COLOR="#0000ff"/>
 <font NAME="Inconsolata" SIZE="16" BOLD="false"/>
 <node TEXT="Le droit d&apos;auteur et patrimonial" ID="ID_781133827" CREATED="1411395680208" MODIFIED="1413400956440">
@@ -86,9 +87,10 @@
 <font NAME="Inconsolata" SIZE="16" BOLD="false"/>
 </node>
 </node>
-<node TEXT="Diffusion et cons&#xe9;quences" POSITION="left" ID="ID_1180849490" CREATED="1411414350723" MODIFIED="1413400956451">
+<node TEXT="II - Diffusion et cons&#xe9;quences" POSITION="left" ID="ID_1180849490" CREATED="1411414350723" MODIFIED="1413487029359">
 <edge COLOR="#00ff00"/>
 <font NAME="Inconsolata" SIZE="16" BOLD="false"/>
+<node TEXT="People" ID="ID_1277872017" CREATED="1413539255621" MODIFIED="1413539265656">
 <node TEXT="Les utilisateurs" ID="ID_56005260" CREATED="1411414359323" MODIFIED="1413400956452">
 <font NAME="Inconsolata" SIZE="16" BOLD="false"/>
 </node>
@@ -99,20 +101,39 @@
 <font NAME="Inconsolata" SIZE="16" BOLD="false"/>
 </node>
 </node>
-<node TEXT="Guide de publication Open Source" POSITION="right" ID="ID_422324529" CREATED="1411414350723" MODIFIED="1413401209162">
+<node TEXT="D&#xe9;pendances" ID="ID_653545022" CREATED="1413539254530" MODIFIED="1413539288966">
+<node TEXT="Distribution" ID="ID_66425392" CREATED="1413539410986" MODIFIED="1413539419030"/>
+<node TEXT="Contribution" ID="ID_540192899" CREATED="1413539419379" MODIFIED="1413539427758"/>
+</node>
+</node>
+<node TEXT="III - Les pratiques de l&apos;Open Source" POSITION="right" ID="ID_422324529" CREATED="1411414350723" MODIFIED="1413487035341">
 <edge COLOR="#00ffff"/>
 <font NAME="Inconsolata" SIZE="16" BOLD="false"/>
-<node TEXT="Bien d&#xe9;marrer" ID="ID_496612177" CREATED="1413401226928" MODIFIED="1413402117050">
+<node TEXT="R&#xe9;duire &quot;l&#x2019;&#xe9;nergie d&#x2019;hacktivation&quot;" ID="ID_582649454" CREATED="1413486951443" MODIFIED="1413487072517">
+<font NAME="Inconsolata" SIZE="16"/>
+</node>
+<node TEXT="Standardiser la proc&#xe9;dure d&apos;installation" ID="ID_496612177" CREATED="1413401226928" MODIFIED="1413487208056">
+<font NAME="Inconsolata" SIZE="16"/>
 <node TEXT="Commencer avec ce que vous avez" ID="ID_1584591737" CREATED="1413402118194" MODIFIED="1413402131223"/>
 <node TEXT="Choisir une licence et l&apos;appliquer" ID="ID_861514071" CREATED="1413402132155" MODIFIED="1413402145398"/>
 <node TEXT="Donner le ton" ID="ID_328860785" CREATED="1413402147907" MODIFIED="1413402150158"/>
 <node TEXT="Annoncer" ID="ID_335610100" CREATED="1413402152011" MODIFIED="1413402153807"/>
 </node>
-<node TEXT="Infra Technique" ID="ID_129463576" CREATED="1413402168860" MODIFIED="1413402182592"/>
-<node TEXT="Infra Sociale" ID="ID_726966887" CREATED="1413402212516" MODIFIED="1413402218815"/>
-<node TEXT="Communication" ID="ID_151788182" CREATED="1413402229714" MODIFIED="1413402232656"/>
-<node TEXT="Paquets, sortie et d&#xe9;v au quotidien" ID="ID_800620944" CREATED="1413402232947" MODIFIED="1413402251904"/>
-<node TEXT="Encadrer les volontaires" ID="ID_1482740281" CREATED="1413402257131" MODIFIED="1413402264176"/>
+<node TEXT="Infra Technique" ID="ID_129463576" CREATED="1413402168860" MODIFIED="1413486963410">
+<font NAME="Inconsolata" SIZE="16"/>
+</node>
+<node TEXT="Infra Sociale" ID="ID_726966887" CREATED="1413402212516" MODIFIED="1413486963413">
+<font NAME="Inconsolata" SIZE="16"/>
+</node>
+<node TEXT="Communication" ID="ID_151788182" CREATED="1413402229714" MODIFIED="1413486963416">
+<font NAME="Inconsolata" SIZE="16"/>
+</node>
+<node TEXT="Paquets, sortie et d&#xe9;v au quotidien" ID="ID_800620944" CREATED="1413402232947" MODIFIED="1413486963418">
+<font NAME="Inconsolata" SIZE="16"/>
+</node>
+<node TEXT="Encadrer les volontaires" ID="ID_1482740281" CREATED="1413402257131" MODIFIED="1413486963419">
+<font NAME="Inconsolata" SIZE="16"/>
+</node>
 </node>
 </node>
 </map>
